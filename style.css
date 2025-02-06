@@ -30,16 +30,27 @@ body {
     border-radius: 20px;
 }
 .avatar {
-     width: 40%;
-     border-radius: 20px;
+     width: 90%;
+     border-radius: 25px;
 }
-
+.h2_about{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.info {
+    display: flex;
+    padding-bottom: 10px;
+}
 .info p {
     margin: 0;
     color: #371553;
     font-style: italic;
     letter-spacing: 1px;
     word-spacing: 5px;
+}
+#text {
+    text-align: justify;
 }
 .sotial {
     padding: 5px 2px 10px 20px;
@@ -74,8 +85,12 @@ a:visited {
 .bg-yellow {
     background-color: #ffffeb;
 }
-.bg-green {
-    background-color:#f0ffe0;
+.bg-blue {
+    background-color:#e0e6ff;
+}
+.bg-flow{
+    background-color: rgb(239, 212, 255);
+
 }
 
 .card {
@@ -86,4 +101,20 @@ a:visited {
 .shadow {
     box-shadow: 5px 0 20px gray,
     -5px -10px 25px pink;
+}
+
+.list {
+    padding: 0 15px;
+    margin: 5px;
+    list-style-type: "♥ ";
+}
+.list li {
+    margin-bottom: 2px;
+    color: rgb(55, 15, 95);
+    font-style: italic;
+    }
+
+.contact h2 {
+    text-align: center;
+
 }

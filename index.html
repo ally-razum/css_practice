@@ -18,24 +18,24 @@
 <body >
     <div class="container shadow">    
     <header>
-        <span>Ally_dev ♥</span>
+        <!-- <span>Ally_dev ♥</span> -->
         <nav class="header-nav shadow">
             
             <ul>
                 <li>
-                    <a href="#about">About me</a>
+                    <a href="#about">♥ About me</a>
                 </li>
                 <li>
-                    <a href="#edu">Education</a>
+                    <a href="#edu">♥ Education</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills">♥ Skills</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">♥ Projects</a>
                 </li>
                 <li>
-                    <a href="#contacts">Contacts</a>
+                    <a href="#contacts">♥ Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -43,14 +43,17 @@
    
     <main>
         <h1 >Portfolio Alevtina</h1>
+        
+        <!-- <h2 class="h2_about">About me</h2> -->
         <section id="about" class="info ">      
-            <div>
-                <h2>About me</h2>
+            <div>                
                 <img class="avatar shadow" src="ai-alita.jpg" alt="avatar"> 
-                <br>             
-                <img src="https://www.codewars.com/users/Ally%20Razum/badges/large?theme=light" height="30px" width="50%">
+                <br>       
+                <img class="avatar shadow" src="https://www.codewars.com/users/Ally%20Razum/badges/large?theme=light" >      
+                
              </div>      
-            <div id="text">              
+            <div id="text">      
+                     
                 <p>🚁 I worked as a software engineer in the group for developing algorithmic support for systems at a company that manufactures automatic control systems for helicopters</p>
                 <p>📲 I worked as a quality assurance engineer in a large international IT company that produces software for mobile communication and telecommunications systems</p>
                 <p>😎 And now <b><em>I'm a Frontend developer</em></b> </p>
@@ -60,19 +63,19 @@
                 <p>🤩 Let's CODE !</p> 
             </div>           
         </section>
-        <br>
+       
  
         <section id="edu" class="card bg-yellow shadow">
             <h2>Education</h2>
-            <ul>
+            <ul class="list">
                 <li>ITMO University St. Petersburg</li>
                 <li>Yuri Gagarin State Technical University of Saratov</li>
                 <li>Industrial and Economic College St. Petersburg</li>
             </ul>
         </section>
-        <section id="skills" class="card bg-green shadow">       
-            <h2>Skills</h2>
-            <ul>
+        <section id="skills" class="card bg-blue shadow">       
+            <h2 >Skills</h2>
+            <ul class="list">
                 <li> 
                     <abbr title="HTML stands for HyperText Markup Language. It was created by the English computer scientist Tim Berners-Lee, best known as the World Wide Web inventor. Sir Tim Berners-Lee. Source: NDLA. He wrote a memo describing his idea of an Internet-based hypertext system in 1989, and in 1991, published a document called “HTML Tags.”.">HTML</abbr> , 
                     <abbr title="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.">CSS</abbr>, 
@@ -92,9 +95,8 @@
                 </li>
             </ul>
         </section>
-        <br>
-        <hr>
-        <section id="projects" class="projects">
+      
+        <section id="projects" class="projects card shadow bg-flow">
             <h2>Projects</h2>
             <div id="pro">
                 <article>
@@ -151,52 +153,56 @@
         </section>
         <br>
         <section id="contacts">
-            <h2>Contacts</h2>
             <div class="sotial shadow">
                 <h3>Social-media:</h3>                
                     <a href="https://github.com/ally-razum">github</a>
                     |
                     <a href="https://www.codewars.com/users/Ally%20Razum">codewars</a>
+
+                    <address>
+                        <ul class="list">
+                            <li>
+                                <p>Email:</p>
+                                <a href="mailto:alevtina.razumovskaia@mail.ru">alevtina.razumovskaia@mail.ru</a>
+                            </li>
+                            <li>
+                                <p>Phone:</p>
+                                <a href="tel:+123456789">+123456789</a>
+                            </li>                    
+                        </ul>
+                    </address>
             </div>
-            <address>
-                <ol>
-                    <li>
-                        <p>Email:</p>
-                        <a href="mailto:alevtina.razumovskaia@mail.ru">alevtina.razumovskaia@mail.ru</a>
-                    </li>
-                    <li>
-                        <p>Phone:</p>
-                        <a href="tel:+123456789">+123456789</a>
-                    </li>                    
-                </ol>
-            </address>
-            <form>
-                <div>
-                    <input type="email" placeholder="Your email">                    
-                </div>
-                <div>
-                    <input type="text" placeholder="Your name">
-                </div>
-                <select>
-                    <option value="student">Student</option>
-                    <option value="Teacher">Teacher</option>
-                    <option value="Developer">Developer</option>
-                    <option value="Other">Other</option>
-                </select>
-                <div>
-                    <label> Write back
-                        <input type="checkbox">
-                    </label>
-                </div>
-                <textarea placeholder="Message"></textarea>
-                <br>
-                <button type="submit">Send</button>
-            </form>         
+            <div class="contact">
+                <h2>Contact me</h2>
+                <form>
+                    <div>
+                        <input type="email" placeholder="Your email">                    
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <select>
+                        <option value="student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div>
+                        <label> Write back
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                    <textarea placeholder="Message"></textarea>
+                    <br>
+                    <button type="submit">Send</button>
+                </form>  
+            </div>
+                    
         </section>
     </main>
     <hr>
     <footer>
-        <p>&copy; 2025 Alevtina</p>
+        <p>&copy; 2025 Ally_dev ♥</p>
         <a href="https://github.com/ally-razum">Github</a>
     </footer>
 </div>
