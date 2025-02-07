@@ -34,6 +34,7 @@ body {
     border-radius: 20px;
     padding: 0 15px;
 }
+
 .avatar {
      width: 90%;
      border-radius: 25px;
@@ -119,25 +120,96 @@ a:visited {
     margin-bottom: 2px;
     color: rgb(55, 15, 95);
     font-style: italic;
+    letter-spacing: 2px;
     }
 
-.contact h2 {
-    text-align: center;
-
-}
-
+    
 .glow-box {  
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .glow-box:hover {
     box-shadow: 0 0 15px rgba(159, 245, 245, 0.856), 
-                0 0 30px rgba(135, 236, 236, 0.6), 
-                0 0 45px rgba(0, 47, 255, 0.4);
+    0 0 30px rgba(135, 236, 236, 0.6), 
+    0 0 45px rgba(0, 47, 255, 0.4);
 }
-
+.contact {
+    padding: 0 15px;
+    border-radius: 20px; 
+} 
+.contact h2 {
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
 .footer {
     padding: 0 1px;
     border-radius: 10px;
     text-align: center;
+}
+
+.form-group label{
+    display: block;
+    font-size: 18px;
+    color: #371553;
+    font-variant: small-caps;
+}
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    background: transparent;
+}
+
+.form-group select {
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid purple;
+    border-radius: 20px;
+    padding: 5px 0 5px;
+    outline: none;
+    font-family: inherit;
+    background-color: transparent; 
+    appearance: none; 
+    cursor: pointer;
+    text-align: center;
+}
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.row > .form-group {
+    width: 50%;
+}
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+.submit {
+    width: 20%;
+    margin-bottom: 10px;
+    border: 1px solid purple;
+    border-radius: 20px;
+    padding: 5px 0 5px;
+    font-family: inherit;
+    background: #371553;
+    color: wheat;
+    cursor: pointer;
+    text-align: center;
+}
+.submit:hover {
+    opacity: 0.9;
+}
+
+.projects p {
+    text-align: justify;
+}
+.projects a {
+    color: #095e06;
 }
