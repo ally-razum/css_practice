@@ -1,0 +1,86 @@
+.header-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: bold;
+}
+.header-nav{
+    border-radius: 20px;
+}
+
+.header-nav li , 
+.header-nav a{
+    border-radius: 20px;
+    padding: 0 15px;
+    color: #800080
+}
+
+@media (max-width: 800px) {
+    .header-nav {
+        position: relative;
+    }
+
+    /* Скрываем список по умолчанию */
+    .header-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #413333;
+        border-radius: 20px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .header-nav a{
+        border-radius: 20px;
+        padding: 0 15px;
+        color: #cfb4cf
+    }
+
+    /* Показываем список, если добавлен класс `active` */
+    .header-nav ul.active {
+        display: flex;
+    }
+
+    .header-nav li {
+        margin: 10px 0;
+    }
+
+    /* Стили для кнопки-бургера */
+    .burger {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    /* Полоски бургера */
+    .burger div {
+        width: 100%;
+        height: 4px;
+        background:  #413333;
+        border-radius: 20px;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    /* Анимация бургера при активации */
+    .burger.active div:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active div:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,27 @@
+.projects p {
+    text-align: justify;
+}
+.projects a {
+    color: #095e06;
+}
+
+#pro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+details {
+    width: 150px;
+}
+
+@media (max-width: 800px) {
+    #pro {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    .projects p {
+         margin-right: 5%;
+    }
+}
