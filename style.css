@@ -27,10 +27,6 @@ a {
     font-size: 18px;    
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 a:active {
     color: #663399;
 }
